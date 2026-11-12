@@ -1,0 +1,16 @@
+{
+  "id": "b4cba870-7f0d-4a7b-9dd7-b3de15fd5ca3",
+  "status": "FINISHED",
+  "platform": "ANDROID",
+  "appIdentifier": "com.chit20.huedrop",
+  "appVersion": "1.0.2",
+  "appBuildVersion": "3",
+  "completedAt": "2026-11-04T07:16:37.637Z",
+  "artifacts": {
+    "buildUrl": "https://expo.dev/artifacts/eas/MqL-oL_TKlJXGFX0WrBlBvsNE8t4vvGUwyAOAqC21es.apk",
+    "applicationArchiveUrl": "https://expo.dev/artifacts/eas/MqL-oL_TKlJXGFX0WrBlBvsNE8t4vvGUwyAOAqC21es.apk"
+  },
+  "apkBytes": 100816791,
+  "sha256": "116aa157851cf4ae25597c12ac960e510be2cfa4611b4de20d67622502c071a1",
+  "physicalDeviceTest": "pending"
+}

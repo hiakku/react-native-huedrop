@@ -39,3 +39,21 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Publishing exclusions
+.env
+.env.*
+!.env.example
+!.env.sample
+.expo/
+.vercel/
+dist/
+web-build/
+node_modules/
+*.apk
+*.aab
+*.zip
+*.log
+credentials.json
+*service-account*.json
+.DS_Store
