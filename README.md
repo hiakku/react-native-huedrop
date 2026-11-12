@@ -45,3 +45,16 @@ The earlier 1.0.0 and 1.0.1 builds were canceled when superseded. The 1.0.2 buil
 Progress, scores, preferences and hint credits are stored on-device with AsyncStorage. Clearing data/uninstalling removes them. Corrupt/unsupported progress is preserved and blocked rather than silently overwritten. The Android ad SDK contacts Google for test advertisements; the browser does not load it. There is no account, backend, analytics pipeline or purchase integration.
 
 All IDs are Google's demonstration IDs, including in the release-mode preview APK. Test ads earn no revenue. `app.config.ts` deliberately blocks the production build profile until the demo-only integration is replaced with the publisher's real configuration and consent handling. See MONETIZATION.md for the handoff. No store publication has happened.
+
+## Website deployment
+
+Public website: https://hiakku-huedrop.pages.dev/
+
+Build with Node 22.13+ and deploy the compiled website to Cloudflare Pages:
+
+```sh
+npm run build:web
+npx wrangler@4.160.1 pages deploy dist --project-name hiakku-huedrop --branch main
+```
+
+The post-export script moves Expo dependency assets out of `assets/node_modules/` because Cloudflare excludes directories with that name. Only compiled website assets are uploaded. This is a direct upload deployment; GitHub pushes do not automatically redeploy it.

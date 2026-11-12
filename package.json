@@ -36,7 +36,8 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.mjs",
     "check": "npm run lint && npm run typecheck && npm test",
-    "build:preview": "npx eas-cli@latest build --platform android --profile preview"
+    "build:preview": "npx eas-cli@latest build --platform android --profile preview",
+    "build:web": "expo export --platform web && node scripts/prepare-web.mjs"
   },
   "private": true,
   "engines": {
